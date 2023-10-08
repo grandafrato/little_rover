@@ -15,7 +15,7 @@ An experimental rover using a RaspberryPi Pico and the AtomVM.
 We need to build AtomVM and the VM libraries before we can get serious with the
 code here.
 
-### AtomVm
+### AtomVM
 
 1. Clone the latest version of [AtomVM](https://github.com/atomvm/AtomVM.git)
    into a suitable directory.
@@ -70,7 +70,7 @@ Now that we have built the project, we should put the software on the Pico!
 2. (optional) If you haven't installed the AtomVM on the Pico before, you will
    need to merge the AtomVM uf2 file with the one you just created.
    ```shell
-  ../AtomVM/build/tools/uf2tool/uf2tool join -o rover_final.uf2 ../AtomVM/src/platforms/rp2040/build/src/AtomVM.uf2 little_rover.uf2
+   ../AtomVM/build/tools/uf2tool/uf2tool join -o rover_final.uf2 ../AtomVM/src/platforms/rp2040/build/src/AtomVM.uf2 little_rover.uf2
    ```
 3. Put the Pico into flashing mode by pushing and holding the BOOTSEL button and
    plugging your Pico into a USB port on your computer. Now it should show up as
